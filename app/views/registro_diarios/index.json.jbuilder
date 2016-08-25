@@ -1,0 +1,1 @@
+json.array! @registro_diarios, partial: 'registro_diarios/registro_diario', as: :registro_diario

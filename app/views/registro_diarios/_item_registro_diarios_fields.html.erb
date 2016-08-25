@@ -1,0 +1,9 @@
+<li class="control-group nested-fields">
+     <div class="controls">
+     <%= f.text_field :item_registro_diario_valor %>>
+         <%= f.fields_for :item do |item_registro_diario_item| %>
+                <%= item_registro_diario_item.text_field :nome %>
+         <% end %>
+         <%= link_to_remove_association "remover", f %>
+     </div>
+</li>

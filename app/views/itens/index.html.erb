@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="page-header">Itens</h1>
+
+<table class="table table-responsive">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Tipo</th>
+      <th>Descrição</th>
+      <th>Frequência</th>
+      <th>Dia da semana</th>
+      <th>Dia do mês</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @itens.each do |item| %>
+      <tr>
+        <td><%= item.nome %></td>
+        <td><%= item.tipo %></td>
+        <td><%= item.descricao %></td>
+        <td><%= item.frequencia %></td>
+        <td><%= item.dia_semana %></td>
+        <td><%= item.dia_mes %></td>
+        <td><%= link_to 'Show', item %></td>
+        <td><%= link_to 'Edit', edit_item_path(item) %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item', new_item_path %>

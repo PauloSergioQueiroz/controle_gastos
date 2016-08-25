@@ -1,0 +1,1 @@
+json.partial! "registro_diarios/registro_diario", registro_diario: @registro_diario

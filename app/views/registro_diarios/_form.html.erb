@@ -1,0 +1,36 @@
+<%= form_for(registro_diario) do |f| %>
+  <% if registro_diario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(registro_diario.errors.count, "error") %> prohibited this registro_diario from being saved:</h2>
+
+      <ul>
+      <% registro_diario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+        <%= f.label :data_registro %>
+        <%= f.datetime_select :data_registro %>
+        <br>
+
+      <%= link_to_add_association 'add item_registro_diario', f, :item_registro_diarios,
+                'data-association-insertion-node' => "#item_registro_diarios ol",
+                'data-association-insertion-method' => "append",
+                :wrap_object => Proc.new {|item_registro_diario| item_registro_diario.build_item} %>
+
+      <hr/>
+      <fieldset id="item_registro_diarios">
+          <ol>
+                <%= f.fields_for :item_registro_diarios do |item_registro_diario| %>
+                      <%= render partial: "item_registro_diarios_fields", locals: {f: item_registro_diario} %>
+                <% end %>
+          </ol>
+      </fieldset>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

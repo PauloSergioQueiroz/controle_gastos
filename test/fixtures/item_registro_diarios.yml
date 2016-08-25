@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  valor: 1.5
+  item: one
+  registro_diario: one
+
+two:
+  valor: 1.5
+  item: two
+  registro_diario: two

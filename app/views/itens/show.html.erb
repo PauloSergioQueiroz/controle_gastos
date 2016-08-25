@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @item.nome %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @item.tipo %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @item.descricao %>
+</p>
+
+<p>
+  <strong>Frequencia:</strong>
+  <%= @item.frequencia %>
+</p>
+
+<p>
+  <strong>Dia semana:</strong>
+  <%= @item.dia_semana %>
+</p>
+
+<p>
+  <strong>Dia mes:</strong>
+  <%= @item.dia_mes %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Voltar', itens_path, class: "btn btn-inverse" %>

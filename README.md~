@@ -1,0 +1,12 @@
+# TODO
+
+- Fazer o cadastro dos itens:
+	- criar scaffold;
+  - atualizar formulário de acordo com o tipo de cada campo
+- Fazer o registro diário:
+  - criar tabela diário;
+  - criar relacionamento n pra n entre a tabela ítem e diário, com um atributo para registro do valor de cada ítem. 
+- Fazer tela de relatório:
+  - busca por intervalos de datas;
+  - detalhamento das despesas e receitas no intervalo informado, além do saldo.
+- Controle de usuários.

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  tipo: MyString
+  descricao: MyString
+  frequencia: MyString
+  dia_semana: MyString
+  dia_mes: MyString
+
+two:
+  nome: MyString
+  tipo: MyString
+  descricao: MyString
+  frequencia: MyString
+  dia_semana: MyString
+  dia_mes: MyString

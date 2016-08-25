@@ -1,0 +1,26 @@
+- Cadastro de ítens de despesas;
+- Cadastro de ítens de ganhos;
+<Podem ser reduzidos a ítem>
+
+- Cadastro diário de despesas e ganhos;
+- Relatório de cada ítem e saldo por intervalo de datas.
+
+
+
+Entidades:
+*Ítem*
+nome do ítem;
+descrição;
+tipo;
+frequência;
+dia da semana;
+dia do mês.
+
+
+
+*Usuário*
+Nome
+usuario
+senha
+
+

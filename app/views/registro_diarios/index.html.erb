@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Registro Diarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data registro</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registro_diarios.each do |registro_diario| %>
+      <tr>
+        <td><%= registro_diario.data_registro %></td>
+        <td><%= link_to 'Show', registro_diario %></td>
+        <td><%= link_to 'Edit', edit_registro_diario_path(registro_diario) %></td>
+        <td><%= link_to 'Destroy', registro_diario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registro Diario', new_registro_diario_path %>
